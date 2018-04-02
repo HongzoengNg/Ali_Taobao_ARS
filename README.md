@@ -1,6 +1,5 @@
 ﻿# **Ali Taobao Ad Recommendation System**
 
-----------
 ## Introduction
 - This project aims to build a model to predict click rates of advertisements and make targeted advertisements to specialized groups of people.
 - The project derives from TianChi Big Data Competition.
@@ -11,7 +10,6 @@
 - Kaidi Wang
 - Yuwei Huang 
 
-----------
 
 ## [Dataset][1]
 

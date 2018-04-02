@@ -18,12 +18,12 @@ def get_metric():
     return m
 
 def output2file(metric):
-    fw=open('metric.txt')
+    fw=open('metric.txt','w')
     for i in range(len(metric)):
-        str=metric[i][0]
+        string=str(metric[i][0])
         for j in range(1,len(metric[i])):
-            str=str+'\t'+metric[i][j]
-        fw.write(str+'\n')
+            string=string+'\t'+str(metric[i][j])
+        fw.write(string+'\n')
     fw.close()
     return
 

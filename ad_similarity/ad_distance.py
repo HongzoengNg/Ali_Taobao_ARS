@@ -30,5 +30,5 @@ def get_dist_df(X,Y):
         x=np.array(X.iloc[i])
         y=np.array(Y.iloc[i])
         dist_lst.append(get_dist_single(x,y,M))
-    dist_lst=pd.DataFrame({'distance':dist_lst})
-    return dist_lst
+    dist=pd.DataFrame({'distance':dist_lst})
+    return dist

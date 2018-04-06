@@ -10,6 +10,9 @@
 - Kaidi Wang
 - Yuwei Huang 
 
+## DOMAIN-0 PASSWORD: 
+- STUDENT: 1234567890
+- HDUSER: 123123
 
 ## [Dataset][1]
 

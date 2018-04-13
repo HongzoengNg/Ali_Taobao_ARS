@@ -3,8 +3,8 @@ import pandas as pd
 '''
 For this file, it provides function to calculate the similarity between advertisements
 Input:
-       X --- A dataframe of advertisements,in formation of columns with [cate_id,campaign_id,customer,brand,price]
-       Y --- Another dataframe of advertisements, in formation of columns with [cate_id,campaign_id,customer,brand,price]
+       X --- A dataframe of advertisements,in formation of columns with [campaign_id,customer,brand,price]
+       Y --- Another dataframe of advertisements, in formation of columns with [campaign_id,customer,brand,price]
 Output:
        dist ---- A series of float number
                  for each of the number, the smaller it is, the higher similarity between 2 advertisements

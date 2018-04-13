@@ -10,7 +10,7 @@ Output:
                  for each of the number, the smaller it is, the higher similarity between 2 advertisements
 '''
 def get_metric():
-    fr=open('metric.txt','r')
+    fr=open('metric2.txt','r')
     m=[]
     for line in fr.readlines():
         line=list(map(float,line.strip().split()))

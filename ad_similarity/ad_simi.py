@@ -10,7 +10,7 @@ def get_metric():
     m=np.array([[.0,.0,.0],[.0,.0,.0],[.0,.0,.0]])
     itml = ITML_Supervised(num_constraints=200)
     for i in range(6):
-        data_r=np.array(random.sample(data.tolist(),int(len(data)/3000)))
+        data_r=np.array(random.sample(data.tolist(),int(len(data)/300)))
         x=data_r[:,[2,3,4]]
         y=data_r[:,1]
         itml.fit(x,y)

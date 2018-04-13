@@ -10,8 +10,8 @@ def get_metric():
     itml = ITML_Supervised(num_constraints=200)
     for i in range(600):
         data_r=np.array(random.sample(data.tolist(),int(len(data)/100)))
-        x=data_r[:,[0,2,3,4]]
-        y=data_r[:,1]
+        x=data_r[:,[1,2,3,4]]
+        y=data_r[:,0]
         itml.fit(x,y)
         m=m+itml.metric()
     m=m/600

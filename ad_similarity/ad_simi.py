@@ -4,17 +4,17 @@ import random
 from metric_learn import ITML_Supervised
 
 def get_metric():
-    ad=pd.read_csv('ad_feature.csv',header=0)
+    ad=pd.read_csv('ad_feature.csv',header=0,sep='\t')
     data=ad.values
     m=np.array([[.0,.0,.0,.0],[.0,.0,.0,.0],[.0,.0,.0,.0],[.0,.0,.0,.0]])
     itml = ITML_Supervised(num_constraints=200)
-    for i in range(600):
-        data_r=np.array(random.sample(data.tolist(),int(len(data)/100)))
+    for i in range(6):
+        data_r=np.array(random.sample(data.tolist(),int(len(data)/3000)))
         x=data_r[:,[1,2,3,4]]
         y=data_r[:,0]
         itml.fit(x,y)
         m=m+itml.metric()
-    m=m/600
+    m=m/6
     return m
 
 def output2file(metric):
